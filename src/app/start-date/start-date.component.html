@@ -1,0 +1,50 @@
+<div class="d-flex col flex-column align-items-center justify-content-center">
+
+  <form>
+  
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <label for="startDate" class="w-100 my-2 text-center">Start Date</label>
+          <input
+              type="date"
+              id="startDate"
+              #startDate
+              class="form-control">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label for="daysNum" class="w-100 my-2 text-center">Number of Days</label>
+            <input
+                type="number"
+                id="daysNum"
+                #daysNum
+                class="form-control">
+          </div>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-12 text-center">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        (click)="onSubmit(startDate.value, daysNum.value)">
+        Show
+      </button>
+      </div>
+    </div>
+
+  </form>
+
+  <hr class="my-5 w-100">
+
+  <div class="col text-center">
+      <kendo-calendar [min]="min" [max]="max"></kendo-calendar>
+  </div>
+
+</div>
