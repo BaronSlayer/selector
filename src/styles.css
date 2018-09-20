@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+.k-calendar .k-calendar-view thead { color: black; }
+
+.k-calendar th { opacity: 0.8; }
+
+.k-calendar-monthview .k-content .k-link { background-color: lightgreen; }
+
+td { background-color: lightgray; }
+
+.k-calendar-monthview .k-content .k-weekend .k-link { background-color: yellow; }
+
+.k-calendar .k-link { color: black; }
+
+.k-calendar-monthview .k-content .k-link,
+.k-calendar-monthview .k-content td,
+.k-calendar-view .k-content .k-link,
+.k-calendar-view .k-content td { border-radius: 0; }
+
+.k-calendar .k-content .k-today.k-state-selected .k-link {
+    color: red;
+    border: 0.5px solid red;
+    box-shadow: none;
+}
