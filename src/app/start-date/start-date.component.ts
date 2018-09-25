@@ -24,11 +24,7 @@ export class StartDateComponent implements OnInit {
     console.log('min is: ' + this.min);
     console.log('Number of days: ' + daysNum);
     const endDate = moment(startDate);
-<<<<<<< HEAD
     endDate.add(daysNum, 'days').subtract(1, 'days');
-=======
-    endDate.add(daysNum, 'days');
->>>>>>> 097e0283641ac84e16f7bad6de9be2207a18aad0
     console.log('End date is: ' + endDate.format('YYYY, M, D'));
     this.max = endDate.toDate();
   }
